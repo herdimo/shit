@@ -27,11 +27,12 @@
         .container {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px;
+            padding: 20px;
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
+            max-width: 90%;
             animation: fadeIn 2s ease-in;
+            margin: 10px;
         }
         @keyframes fadeIn {
             from {
@@ -43,7 +44,7 @@
         }
         h1 {
             color: #ff4500;
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0;
             animation: textAnimation 2s ease-in-out infinite alternate;
         }
@@ -56,23 +57,24 @@
             }
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #333;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         .balloons {
             margin-top: 20px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         .balloon {
-            width: 50px;
-            height: 70px;
+            width: 40px;
+            height: 60px;
             background-color: #ff69b4;
             border-radius: 50px 50px 0 0;
             position: relative;
             display: inline-block;
-            margin: 0 15px;
+            margin: 10px;
             animation: float 3s ease-in-out infinite;
         }
         .balloon:nth-child(2) {
@@ -105,6 +107,7 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap;
             gap: 20px;
         }
         .images a {
@@ -115,7 +118,7 @@
             animation: bounce 2s infinite alternate;
         }
         .images img {
-            width: 150px;
+            width: 100px;
             height: auto;
         }
         @keyframes bounce {
@@ -128,8 +131,30 @@
         }
         .footer {
             margin-top: 30px;
-            font-size: 1.2em;
+            font-size: 1em;
             color: #555;
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 800px;
+                padding: 40px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.5em;
+            }
+            .balloon {
+                width: 50px;
+                height: 70px;
+            }
+            .images img {
+                width: 150px;
+            }
+            .footer {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -147,7 +172,9 @@
             <a href="https://www.pornhub.com" target="_blank">
                 <img src="https://via.placeholder.com/150/FF69B4/FFFFFF?text=Подарок" alt="Подарок">
             </a>
-            <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Торт" alt="Торт">
+            <a href="https://www.youtube.com/watch?v=O5nSGfV_Cck" target="_blank">
+                <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Торт" alt="Торт">
+            </a>
             <a href="https://www.icegay.tv/ru/categories" target="_blank">
                 <img src="https://via.placeholder.com/150/FFD700/FFFFFF?text=Шарики" alt="Шарики">
             </a>
@@ -156,5 +183,7 @@
             <p>С любовью, от твоих друзей и близких!</p>
         </div>
     </div>
+</body>
+</html>
 </body>
 </html>
