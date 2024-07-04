@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения, Ваня!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            animation: backgroundAnimation 10s infinite alternate;
+            overflow: hidden;
+        }
+        @keyframes backgroundAnimation {
+            from {
+                background: linear-gradient(to right, #ffecd2, #fcb69f);
+            }
+            to {
+                background: linear-gradient(to right, #fcb69f, #ffecd2);
+            }
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            color: #ff4500;
+            font-size: 3em;
+            margin: 0;
+            animation: textAnimation 2s ease-in-out infinite alternate;
+        }
+        @keyframes textAnimation {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+        p {
+            font-size: 1.5em;
+            color: #333;
+            margin: 20px 0;
+        }
+        .balloons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ff69b4;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+            display: inline-block;
+            margin: 0 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .balloon:nth-child(2) {
+            background-color: #ffb6c1;
+            animation-duration: 2.5s;
+        }
+        .balloon:nth-child(3) {
+            background-color: #87ceeb;
+            animation-duration: 3.5s;
+        }
+        .balloon:before {
+            content: '';
+            width: 2px;
+            height: 40px;
+            background-color: #333;
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .images a {
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: bounce 2s infinite alternate;
+        }
+        .images img {
+            width: 150px;
+            height: auto;
+        }
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>С Днём Рождения, Ваня!</h1>
+        <p>Поздравляю тебя с этим замечательным днём! Желаю счастья, здоровья и успехов во всех начинаниях!</p>
+        <p>Пусть каждый день будет наполнен радостью и теплом, а вокруг будут только верные друзья и близкие люди. Пусть все твои мечты сбываются, а цели достигаются. Никогда не останавливайся на достигнутом и стремись к новым вершинам. Пусть жизнь дарит тебе множество ярких и незабываемых моментов!</p>
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+        <div class="images">
+            <a href="https://www.pornhub.com" target="_blank">
+                <img src="https://via.placeholder.com/150/FF69B4/FFFFFF?text=Подарок" alt="Подарок">
+            </a>
+            <img src="https://via.placeholder.com/150/87CEEB/FFFFFF?text=Торт" alt="Торт">
+            <a href="https://www.icegay.tv/ru/categories" target="_blank">
+                <img src="https://via.placeholder.com/150/FFD700/FFFFFF?text=Шарики" alt="Шарики">
+            </a>
+        </div>
+        <div class="footer">
+            <p>С любовью, от твоих друзей и близких!</p>
+        </div>
+    </div>
+</body>
+</html>
